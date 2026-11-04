@@ -1,4 +1,9 @@
 towerVoice=dfki-spike-hsmm
+deliveryVoice=dfki-prudence-hsmm
+groundVoice=dfki-poppy-hsmm
+departureVoice=dfki-spike-hsmm
+centerVoice=cmu-bdl-hsmm
+approachVoice=dfki-obadiah-hsmm
 voiceSetting=FIRFilter+jetPilot+Volume(amount:0.95)
 #voiceSetting=Volume(amount:0.8)
 #volume stops excessive distortion

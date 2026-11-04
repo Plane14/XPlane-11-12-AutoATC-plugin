@@ -1899,9 +1899,9 @@ float SendATCData(float                inElapsedSinceLastCall,
             jfloat tplaneData[14]={};
 
             tplaneData[0]=(jfloat)(XPLMGetDatai(transponder_codeRef)*1.0);
-            tplaneData[1]=XPLMGetDataf(latitudeRef);
-            tplaneData[2]=XPLMGetDataf(longitudeRef);
-            tplaneData[3]=XPLMGetDataf(altitudeRef)*3.28084;
+            tplaneData[1]=(jfloat)XPLMGetDatad(latitudeRef);
+            tplaneData[2]=(jfloat)XPLMGetDatad(longitudeRef);
+            tplaneData[3]=(jfloat)(XPLMGetDatad(altitudeRef)*3.28084);
             tplaneData[4]=(jfloat)(XPLMGetDatai(com1_freq_hzRef)*1.0);
             tplaneData[5]=(jfloat)(XPLMGetDatai(com1_stdby_freq_hz)*1.0);
             tplaneData[6]=XPLMGetDataf(iasRef);
